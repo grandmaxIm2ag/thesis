@@ -1,0 +1,45 @@
+\documentclass[frenchb,10pt, a4paper]{report}
+\usepackage{eso-pic}	% Nécessaire pour mettre des images en arrière plan
+\usepackage{array}
+\input{parts/packages}
+
+\input{parts/firstPage.tex}
+
+%%% BEGIN DOCUMENT
+\begin{document}
+
+\pagestyle{plain}
+\pagedegarde
+\dominitoc
+\tableofcontents*
+%=============
+
+
+\input{parts/intro.tex}
+
+\part{Literature Review}
+\input{parts/review/planning.tex}
+\input{parts/review/grammar.tex}
+\input{parts/review/state_of_art.tex}
+
+\part{Contributions}
+\input{parts/contributions/strips.tex}
+\input{parts/contributions/incremental.tex}
+\input{parts/contributions/adl.tex}
+\input{parts/contributions/temporal.tex}
+\input{parts/contributions/htn.tex}
+
+\input{parts/conclusion.tex}
+
+\part*{Annexes}
+
+\nocite{*}
+\bibliographystyle{ieeetr}
+\bibliography{biblio,grammar,ml_techniques,soa}
+% \nocite{*}
+%\printnomenclature
+% \listoffigures
+% \listoftables
+%\input{parts/nomenclature.tex}
+\end{document}
+% end of file template.tex

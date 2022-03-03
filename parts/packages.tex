@@ -1,0 +1,94 @@
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\bullet$}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\newcommand\overmat[2]{%
+  \makebox[0pt][l]{$\smash{\color{white}\overbrace{\phantom{%
+    \begin{matrix}#2\end{matrix}}}^{\text{\color{black}#1}}}$}#2}
+\newcommand\bovermat[2]{%
+  \makebox[0pt][l]{$\smash{\overbrace{\phantom{%
+    \begin{matrix}#2\end{matrix}}}^{\text{#1}}}$}#2}
+\newcommand\partialphantom{\vphantom{\frac{\partial e_{P,M}}{\partial w_{1,1}}}}
+\usepackage{lmodern}
+\usepackage[
+paper=a4paper, % Change to letterpaper for US letter
+% inner=2.5cm, % Inner margin
+% outer=3.8cm, % Outer margin
+% bindingoffset=.5cm, % Binding offset
+% top=2.5cm, % Top margin
+% bottom=2.5cm, % Bottom margin
+]{geometry}
+\usepackage{babel}
+\usepackage{tikz}
+\usetikzlibrary{automata, positioning, arrows,shapes,decorations,calc,arrows.meta,fit}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{decorations.shapes}
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.fractals}
+\usetikzlibrary{decorations.footprints}
+\usepackage{minitoc}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{1}
+\setcounter{minitocdepth}{3}
+
+% \tikzset{
+%     -Latex,auto,node distance =1 cm and 1 cm,semithick,
+%     state/.style ={ellipse, draw, minimum width = 0.7 cm},
+%     point/.style = {circle, draw, inner sep=0.04cm,fill,node contents={}},
+%     bidirected/.style={Latex-Latex,dashed},
+%     el/.style = {inner sep=2pt, align=left, sloped}
+% }
+\usepackage{multirow}
+\usepackage{appendix}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mathpazo}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}\usepackage{xcolor}
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+\usepackage{adjustbox}
+\usepackage{upgreek}
+\usepackage{listings}
+\usepackage[french]{nomencl}
+\makenomenclature
+\lstdefinelanguage{PDDL}{
+  sensitive=false,    % not case-sensitive
+  morecomment=[l]{;}, % line comment
+  alsoletter={:,-},   % consider extra characters
+  morekeywords={
+    define,domain,problem,not,and,or,when,forall,exists,either,
+    :domain,:requirements,:types,:objects,:constants,
+    :predicates,:action,:parameters,:precondition,:effect,
+    :fluents,:primary-effect,:side-effect,:init,:goal,
+    :strips,:adl,:equality,:typing,:conditional-effects,
+    :negative-preconditions,:disjunctive-preconditions,
+    :existential-preconditions,:universal-preconditions,:quantified-preconditions,
+    :functions,assign,increase,decrease,scale-up,scale-down,
+    :metric,minimize,maximize,
+    :durative-actions,:duration-inequalities,:continuous-effects,
+    :durative-action,:duration,:condition
+  }
+}
+\usepackage[nottoc, notlof, notlot]{tocbibind}
+
+\usepackage{ntheorem}
+\theoremstyle{plain}
+
+\newtheorem{Definition_}{Définition}[section]
+\newtheorem{Theoreme}{Théorème}[section]
+\newtheorem{Propostion}{Proposition}[section]
+\newtheorem{Propriete}{Propriété}[section]
+\newtheorem{Lemmes}{Lemmes}[section]
+\newtheorem{Corolaire}{Corolaire}[section]
+\newtheorem{Preuve}{Preuve}[section]
+\newtheorem{Exemple}{Exemple}[section]
+\usepackage{pdfpages}
